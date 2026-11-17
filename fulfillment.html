@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Order fulfillment page explaining the five steps from order placed to delivered and how the team tracks late orders.">
+  <meta name="keywords" content="business dashboard, sales tracking, order fulfillment, subscriptions, Shopify, Asana">
+  <title>Fulfillment | DrC Business Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to main content</a>
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="DrC Business Dashboard logo">
+      <p>DrC Business Dashboard<span>Sales &middot; Fulfillment &middot; Subscriptions</span></p>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="fulfillment.html" class="current" aria-current="page">Fulfillment</a></li>
+        <li><a href="subscriptions.html">Subscriptions</a></li>
+        <li><a href="integrations.html">Integrations</a></li>
+        <li><a href="access.html">Team Access</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <p class="kicker">Fulfillment</p>
+    <h1>From checkout to doorstep</h1>
+    <p class="lead">Customers judge the business by how quickly and carefully an order arrives. The dashboard tracks every order through five stages so nothing quietly gets stuck.</p>
+
+    <div class="split">
+      <img src="images/fulfillment-flow.svg" alt="Five stages: order placed, payment cleared, picked and packed, shipped, delivered" width="600" height="320">
+      <div>
+        <h2>The five stages</h2>
+        <ol class="steps">
+          <li><strong>Order placed</strong> &ndash; the order arrives from Shopify, Amazon or a wholesale invoice.</li>
+          <li><strong>Payment cleared</strong> &ndash; payment is confirmed before anything is packed.</li>
+          <li><strong>Picked &amp; packed</strong> &ndash; the warehouse team prepares the box.</li>
+          <li><strong>Shipped</strong> &ndash; a tracking number is created and sent to the customer.</li>
+          <li><strong>Delivered</strong> &ndash; the carrier confirms delivery.</li>
+        </ol>
+      </div>
+    </div>
+
+    <section aria-labelledby="late">
+      <h2 id="late">Catching late orders</h2>
+      <p>Any order that sits in one stage longer than 48 hours is flagged in red on the home page. Each flagged order becomes a task in Asana for the person who owns that stage, so the problem is assigned instead of just noticed. The <a href="integrations.html">Integrations page</a> explains how that connection works.</p>
+      <div class="cards">
+        <div class="card"><h3>Packed</h3><p class="big">2 days</p><p>Average time to pack (sample).</p></div>
+        <div class="card info"><h3>In transit</h3><p class="big">3.4 days</p><p>Average carrier time (sample).</p></div>
+        <div class="card alert"><h3>Late</h3><p class="big">14</p><p>Orders flagged this week (sample).</p></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 DrC Business Dashboard &mdash; a CIS 300 final project. All figures shown are sample data.</p>
+    <p>Questions? <a href="mailto:rgchristianson@gmail.com">Email the dashboard team</a></p>
+  </footer>
+</body>
+</html>

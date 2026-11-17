@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sales dashboard showing revenue, orders and average order value for each sales channel, with a six-month trend chart.">
+  <meta name="keywords" content="business dashboard, sales tracking, order fulfillment, subscriptions, Shopify, Asana">
+  <title>Sales | DrC Business Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to main content</a>
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="DrC Business Dashboard logo">
+      <p>DrC Business Dashboard<span>Sales &middot; Fulfillment &middot; Subscriptions</span></p>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sales.html" class="current" aria-current="page">Sales</a></li>
+        <li><a href="fulfillment.html">Fulfillment</a></li>
+        <li><a href="subscriptions.html">Subscriptions</a></li>
+        <li><a href="integrations.html">Integrations</a></li>
+        <li><a href="access.html">Team Access</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <p class="kicker">Sales</p>
+    <h1>Sales across every channel</h1>
+    <p class="lead">Total revenue is only useful when you can see where it comes from. This page breaks sales into the channels the business uses and shows the six-month trend.</p>
+
+    <figure>
+      <img src="images/sales-chart.svg" alt="Bar chart: monthly sales rise from 42 thousand dollars in June to 88 thousand in November" width="600" height="320">
+      <figcaption>Monthly sales, June to November (sample data).</figcaption>
+    </figure>
+
+    <section aria-labelledby="channels">
+      <h2 id="channels">November results by channel</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Orders, revenue and fulfillment rate by sales channel, November (sample data)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Channel</th>
+              <th scope="col" class="num">Orders</th>
+              <th scope="col" class="num">Revenue</th>
+              <th scope="col" class="num">Average order</th>
+              <th scope="col" class="num">Shipped on time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Shopify store</th><td class="num">612</td><td class="num">$41,300</td><td class="num">$67.48</td><td class="num">98%</td></tr>
+            <tr><th scope="row">Amazon</th><td class="num">298</td><td class="num">$19,900</td><td class="num">$66.78</td><td class="num">96%</td></tr>
+            <tr><th scope="row">Wholesale</th><td class="num">41</td><td class="num">$11,400</td><td class="num">$278.05</td><td class="num">93%</td></tr>
+            <tr><th scope="row">Subscriptions</th><td class="num">233</td><td class="num">$15,800</td><td class="num">$67.81</td><td class="num">99%</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td>Total</td><td class="num">1,184</td><td class="num">$88,400</td><td class="num">$74.66</td><td class="num">97%</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="reading">
+      <h2 id="reading">How to read this page</h2>
+      <ul class="checks">
+        <li><strong>Average order</strong> is revenue divided by orders. A jump usually means wholesale buyers.</li>
+        <li><strong>Shipped on time</strong> means shipped within two business days of payment.</li>
+        <li>Compare the chart with the <a href="subscriptions.html">Subscriptions page</a> to see how much growth is recurring.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 DrC Business Dashboard &mdash; a CIS 300 final project. All figures shown are sample data.</p>
+    <p>Questions? <a href="mailto:rgchristianson@gmail.com">Email the dashboard team</a></p>
+  </footer>
+</body>
+</html>
